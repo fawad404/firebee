@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const Box = () => {
@@ -11,11 +12,14 @@ const Box = () => {
         <div className="flex flex-col lg:flex-row justify-center items-center lg:space-x-10">
           {/* Left Side (Open Box with Text and Images) */}
           <div className="">
-            <img 
-              src="/product image.png" 
-              alt="Product Box Open"
-              className="h-80"
-            />
+          <Image 
+  src="/product image.png" 
+  alt="Person wearing device" 
+  width={400}  // example width
+  height={500} // example height
+  className="rounded-lg object-cover md:rounded-xl"
+  style={{ height: 'auto' }} // Let the height adjust according to width if needed
+/>
           </div>
 
           {/* Right Side (Product in the Box) */}

@@ -1,5 +1,6 @@
 import React from 'react'
 import './heroSection.css';
+import Image from 'next/image';
 
 const HeroSection = () => {
   return (
@@ -36,7 +37,13 @@ const HeroSection = () => {
              
                  <div className="main-image-container overflow-hidden">
 
-                     <img src="/product with ligh 1.png" alt="Firebee Headband" className=" main-image w-full object-cover mb-4" />
+                     <Image 
+                     src="/product with ligh 1.png"
+                      alt="Firebee Headband" 
+                      className=" main-image w-full object-cover mb-4"
+                      width={100}
+                      height={100}
+                       />
                     </div>
 
               

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const WhatSection = () => {
@@ -15,7 +16,14 @@ const WhatSection = () => {
   <div className="flex flex-col lg:flex-row items-center justify-center">
    
     <div className="mb-6 lg:mb-0 lg:mr-8">
-      <img src="/_DP_1653 2.png" alt="Person wearing device" className="rounded-lg h-44 md:h-96" />
+    <Image 
+  src="/_DP_1653 2.png" 
+  alt="Person wearing device" 
+  width={400}  // example width
+  height={300} // example height
+  className="rounded-lg object-cover md:rounded-xl"
+  style={{ height: 'auto' }} // Let the height adjust according to width if needed
+/>
     </div>
 
   
