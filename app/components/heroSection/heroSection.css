@@ -1,0 +1,46 @@
+.kit-section {
+  border: 1px solid transparent; /* Initially make the border transparent */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  background: linear-gradient(white, white) padding-box, /* Background for the inner section */
+              linear-gradient(to right, #ff512f, #dd2476, #8e2de2, #4a00e0) border-box; /* Gradient for the border */
+              transition: background 0.3s ease;
+            }
+            .section:hover {
+                border: 1px solid transparent; 
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, #4a00e0, #8e2de2, #dd2476, #ff512f) border-box;
+}
+.popular-kit-bg {
+  background-image: linear-gradient(to right, #A34D9F, #275FD0, #275FD0);
+  
+   /* Rounded corners */
+  transition: background-image 0.3s ease; /* Smooth transition */
+}
+/* Hide scrollbar for other browsers (Firefox, etc.) */
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.images-section{
+    overflow-x: auto;
+        white-space: wrap; /* Make sure the content doesn't wrap */
+        scroll-behavior: smooth;
+}
+/* Container styles */
+.main-image-container {
+  width: 100%;  /* Adjust the width as needed */
+  max-width: 600px; /* Maximum width of the image */
+  overflow: hidden; /* Ensure that the image doesn't overflow on zoom */
+  border-radius: 8px; /* Optional: rounded corners for the image container */
+}
+
+/* Image styles */
+.main-image {
+  width: 100%; /* Ensures the image fills the container */
+  transition: transform 0.4s ease; /* Smooth transition for zoom effect */
+}
+
+/* Zoom-in on hover */
+.main-image-container:hover .main-image {
+  transform: scale(1.1); /* Zooms in the image by 10% */
+}
